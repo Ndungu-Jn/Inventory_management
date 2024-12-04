@@ -17,6 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from dashboard import views
+
 urlpatterns = [
+    path('', views.index, name='index'),
+    path('staff', views.staff, name='staff'),
+    path('product', views.product, name='product'),
+    path('order', views.order, name='order'),
     path('admin/', admin.site.urls),
 ]
