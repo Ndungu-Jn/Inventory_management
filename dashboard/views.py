@@ -13,3 +13,5 @@ def product(request):
 
 def order(request):
     return render(request, 'dashboard/order.html')
+
+
