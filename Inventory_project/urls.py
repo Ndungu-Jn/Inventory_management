@@ -36,6 +36,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('register', user_view.register, name='user_register'),
     path('profile', user_view.profile, name='user_profile'),
+    path('profile/update', user_view.profile_update, name='user_profile_updates'),
     path('', auth_views.LoginView.as_view(template_name='user/login.html'), name='user_login'),
     path('logout', auth_views.LogoutView.as_view(template_name='user/logout.html'), name='user_logout'),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
