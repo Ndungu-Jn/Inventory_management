@@ -4,21 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9d14ef9-6c4a-4814-91b4-4682e7922b04" name="Changes" comment="The user profile">
-      <change afterPath="$PROJECT_DIR$/media/avatar.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user/profile_updates.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/signals.py" afterDir="false" />
+    <list default="true" id="b9d14ef9-6c4a-4814-91b4-4682e7922b04" name="Changes" comment="The user profile updates and edit">
+      <change afterPath="$PROJECT_DIR$/dashboard/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/dashboard/product_delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/dashboard/product_update.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Inventory_project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Inventory_project/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/dashboard/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/signals.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/signals.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseLocalColorSettings">
+    <colors>
+      <entry key="5645600d-1b4a-4c02-9074-11d332a6fc9e" value="Green" />
+    </colors>
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
@@ -65,7 +69,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "django.template.preview.state": "SHOW_EDITOR_AND_PREVIEW",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/b1n4ry/Inventory_management_project/Inventory_project/media",
+    "last_opened_file_path": "/home/b1n4ry/Inventory_management_project/Inventory_project/templates/dashboard",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -78,6 +82,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/dashboard" />
       <recent name="$PROJECT_DIR$/media" />
       <recent name="$PROJECT_DIR$/dashboard/migrations" />
       <recent name="$PROJECT_DIR$/static/css" />
@@ -136,7 +141,8 @@
       <workItem from="1733376726659" duration="12508000" />
       <workItem from="1733479574021" duration="1099000" />
       <workItem from="1733480682928" duration="15467000" />
-      <workItem from="1733553100977" duration="5145000" />
+      <workItem from="1733553100977" duration="6601000" />
+      <workItem from="1733559880066" duration="11828000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -218,7 +224,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733551840239</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="The user profile updates and edit">
+      <option name="closed" value="true" />
+      <created>1733558512096</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1733558512096</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,6 +252,7 @@
     <MESSAGE value="Login permissions and restriction" />
     <MESSAGE value="staff index page" />
     <MESSAGE value="The user profile" />
-    <option name="LAST_COMMIT_MESSAGE" value="The user profile" />
+    <MESSAGE value="The user profile updates and edit" />
+    <option name="LAST_COMMIT_MESSAGE" value="The user profile updates and edit" />
   </component>
 </project>
