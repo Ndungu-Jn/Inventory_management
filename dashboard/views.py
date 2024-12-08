@@ -14,6 +14,11 @@ from django.contrib import messages
 @login_required
 def index(request):
     orders = Order.objects.all()
+    products = Product.objects.all()
+    orders_count = Order.objects.count()
+    products_count = Product.objects.count()
+    workers_count = User.objects.count()
+
     if request.method == 'POST':
         form = OrderForm(request.POST)
         if form.is_valid():
@@ -26,6 +31,10 @@ def index(request):
     context = {
         'orders': orders,
         'form': form,
+        'products': products,
+        'orders_count': orders_count,
+        'products_count': products_count,
+        'workers_count': workers_count,
 
     }
 
@@ -34,8 +43,15 @@ def index(request):
 @login_required
 def staff(request):
     workers = User.objects.all()
+    workers_count = workers.count()
+    products_count = Product.objects.all().count()
+    orders_count = Order.objects.all().count()
     context = {
-        'workers': workers
+        'workers': workers,
+        'workers_count': workers_count,
+        'orders_count': orders_count,
+        'products_count': products_count,
+
     }
     return render(request, 'dashboard/staff.html', context)
 @login_required
@@ -43,12 +59,16 @@ def staff_details(request, pk):
     workers = User.objects.get(id=pk)
     context = {
         'workers': workers,
+
     }
     return render(request, 'dashboard/staff_details.html', context)
 
 @login_required
 def product(request):#using ORM
     items = Product.objects.all()
+    products_count = items.count()
+    workers_count = User.objects.all().count()
+    orders_count = Order.objects.all().count()
 
     if  request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
@@ -63,6 +83,10 @@ def product(request):#using ORM
     context = {
         'items': items,
         'form': form,
+        'workers_count': workers_count,
+        'orders_count': orders_count,
+        'products_count': products_count,
+
 
 
     }
@@ -71,9 +95,14 @@ def product(request):#using ORM
 @login_required
 def order(request):
     orders = Order.objects.all()
-
+    orders_count = orders.count()
+    products_count = Product.objects.all().count()
+    workers_count = User.objects.all().count()
     context = {
-        'orders': orders
+        'orders': orders,
+        'workers_count': workers_count,
+        'orders_count': orders_count,
+        'products_count': products_count,
     }
     return render(request, 'dashboard/order.html', context)
 
